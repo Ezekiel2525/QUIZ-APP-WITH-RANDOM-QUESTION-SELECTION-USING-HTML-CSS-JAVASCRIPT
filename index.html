@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUIZ APP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="app">
+            <h1>QUIZ TIME?</h1>
+            <h4 id="instructions">Welcome to the Quiz Game. <br><br>
+                This game selects questions at random. <br><br>
+                Each correct answer awards you 4 points. <br><br>
+                Click the Start button below to play the game. 
+            </h4>
+            <div id="quizbox" class="hide">
+                <h2 id="question">Question Goes here</h2>
+                <div id="answersbox">
+                    <button class="answerbtn" type="button">Answer 1</button>
+                    <button class="answerbtn" type="button">Answer 2</button>
+                    <button class="answerbtn" type="button">Answer 3</button>
+                    <button class="answerbtn" type="button">Answer 4</button>
+                </div>
+            </div>
+            <div class="controls">
+                <button type="button" class="btn" id="startbtn">Start</button>
+                <button id="nextbtn" type="button" class="btn hide">Next</button>
+            </div>
+        </div>
+    </header>
+
+
+    <script src="quiz.js"></script>
+</body>
+</html>

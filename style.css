@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(#050002b3, #05000299), url('imgs/quizback.12.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.app {
+    width: 95%;
+    max-width: 750px;
+    margin: 80px auto 3px;
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.app h1 {
+    text-align: center;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 18px;
+}
+
+.app h4 {
+    padding-top: 25px;
+    text-align: center;
+    padding-bottom: 28px;
+    border-bottom: 2px solid #fff;
+}
+
+#quizbox {
+    padding-top: 28px;
+   
+}
+
+#quizbox h2 {
+   font-weight: 500;
+   font-size: 18px;
+   text-align: center;
+}
+
+#answersbox {
+    padding-top: 28px;
+}
+
+.answerbtn {
+    width: 100%;
+    padding: 12px;
+    margin: 7px 0;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    font-weight: bold;
+    font-size: 20px;
+    white-space: nowrap;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: ease-in 0.7s;
+}
+
+.answerbtn:hover:not([disabled]) {
+    background: #03031e;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.answerbtn:disabled{
+    cursor: no-drop;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 18px;
+    width: 100%;
+
+}
+
+.btn {
+    width: 35%;
+    padding: 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: linear .7s;
+}
+
+.btn:hover {
+    background: #03031e;
+    color: #fff;
+    border: 3px solid #fff;
+}
+
+.hide {
+    display: none;
+}
+
+.right {
+    background-color: #069c06;
+    color: #fff;
+    border: 2px solid #069c06;
+}
+
+.wrong {
+    background-color: #d30c0c;
+    color: #fff;
+    border: 2px solid #d30c0c;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .app h1 {
+        font-size: 28px;
+    }
+    .app h4 {
+        font-size: 15.3px;
+        text-wrap: nowrap;
+    }
+    .btn {
+        width: 55%;
+        padding: 12px; 
+    }
+    
+}
